@@ -57,8 +57,6 @@ class Y60 < Formula
       onoe 'NVIDIA Cg Toolkit missing. Get if from http://developer.nvidia.com/cg-toolkit and try again'
     end
 
-    #ENV.x11
-
     args = std_cmake_args
     args << '-DACMAKE_BUILD_TESTS=OFF' unless build.include? 'enable-tests'
     args << '-DACMAKE_BUILDINFO=OFF' if build.include? 'disable-buildinfo'
