@@ -3,7 +3,7 @@ require 'formula'
 class Y60 < Formula
   homepage 'http://y60.artcom.de'
   version "1.0.8"
-  
+
   option 'with-gtk', "Enable building g60 and y60jsgtk component"
   option 'with-cryptopp', "Enable building cryptopp component"
   option 'with-tuio', "Enable building TUIO component"
@@ -35,6 +35,7 @@ class Y60 < Formula
   depends_on 'giflib'
   depends_on 'asl'
   depends_on 'glib'
+  depends_on :x11
 
   if build.include? 'with-tuio'
     depends_on 'tuio_cpp'
@@ -56,7 +57,7 @@ class Y60 < Formula
       onoe 'NVIDIA Cg Toolkit missing. Get if from http://developer.nvidia.com/cg-toolkit and try again'
     end
 
-    ENV.x11
+    #ENV.x11
 
     args = std_cmake_args
     args << '-DACMAKE_BUILD_TESTS=OFF' unless build.include? 'enable-tests'
