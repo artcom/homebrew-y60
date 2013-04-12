@@ -17,7 +17,7 @@ Dependencies: tbd
 
 Installing Homebrew-avr Formulae
 --------------------------------
-Just `brew tap mononar/y60` and then `brew install <formula>`.
+Just `brew tap monolar/y60` and then `brew install <formula>`.
 
 You can also install via URL:
 
