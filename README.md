@@ -15,7 +15,7 @@ Current Versions
 
 Dependencies: tbd
 
-Installing Homebrew-avr Formulae
+Installing Homebrew-y60 Formulae
 --------------------------------
 Just `brew tap monolar/y60` and then `brew install <formula>`.
 
