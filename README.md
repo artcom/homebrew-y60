@@ -19,7 +19,7 @@ Installing Homebrew-y60 Formulae
 --------------------------------
 Just `brew tap monolar/y60` and then `brew install <formula>`.
 
-You can also install via URL:
+You can also install a specific forumlare directly via URL:
 
 ```
 brew install https://raw.github.com/monolar/homebrew-y60/master/<formula>.rb
