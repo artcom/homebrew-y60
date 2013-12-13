@@ -7,9 +7,9 @@ Y60 is a 3d opengl rendering engine by ART+COM (http://y60.artcom.de)
 	
 Current Versions
 ----------------
-- asl (1.0.8)
-- acmake (1.0.8)
-- y60 (1.0.8)
+- asl (1.0.9)
+- acmake (1.0.9)
+- y60 (1.0.9)
 - tuio_cpp (1.4)
 - cclib (head of master branch)
 
