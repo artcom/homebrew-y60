@@ -3,8 +3,8 @@ require 'formula'
 class Watchdog < Formula
   homepage 'https://github.com/artcom/watchdog'
 
-  git_url = if build.include? "use-internal-git"
-              "git://gitorious.intern.artcom.de/pro/watchdog.git"
+  git_url = if build.include? 'use-internal-git'
+              'git://gitorious.intern.artcom.de/pro/watchdog.git'
             else
               'https://github.com/artcom/watchdog.git'
             end
@@ -17,13 +17,13 @@ class Watchdog < Formula
   depends_on 'asl' => :build
 
   def install
-    system "cmake", ".", *std_cmake_args
-    system "make"
-    system "make test" if build.include? 'enable-tests'
-    system "make install"
+    system 'cmake', '.', *std_cmake_args
+    system 'make'
+    system 'make test' if build.include? 'enable-tests'
+    system 'make install'
   end
 
   def test
-    system "make test"
+    system 'make test'
   end
 end

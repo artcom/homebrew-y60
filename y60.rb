@@ -3,16 +3,16 @@ require 'formula'
 class Y60 < Formula
   homepage 'http://y60.artcom.de'
 
-  option 'with-gtk', "Enable building g60 and y60jsgtk component"
-  option 'with-cryptopp', "Enable building cryptopp component"
-  option 'with-tuio', "Enable building TUIO component"
-  option 'with-cairo', "Enable building cairo component"
+  option 'with-gtk', 'Enable building g60 and y60jsgtk component'
+  option 'with-cryptopp', 'Enable building cryptopp component'
+  option 'with-tuio', 'Enable building TUIO component'
+  option 'with-cairo', 'Enable building cairo component'
   option 'use-internal-git', 'Use ART+COM internal repository'
   option 'enable-tests', 'build and execute unit tests'
   option 'disable-buildinfo', 'disable compiled in buildinfo'
 
-  git_url = if build.include? "use-internal-git"
-              "git://gitorious.intern.artcom.de/pro/y60src.git"
+  git_url = if build.include? 'use-internal-git'
+              'git://gitorious.intern.artcom.de/pro/y60src.git'
             else
               'https://github.com/artcom/y60.git'
             end
@@ -62,13 +62,13 @@ class Y60 < Formula
     args << '-DACMAKE_BUILDINFO_SCMDATA=OFF' if build.include? 'disable-buildinfo'
     args << '-DY60_WITH_GTK=OFF' unless build.include? 'with-gtk'
 
-    system "cmake", ".", *args
-    system "make"
-    system "make test" if build.include? 'enable-tests'
-    system "make install"
+    system 'cmake', '.', *args
+    system 'make'
+    system 'make test' if build.include? 'enable-tests'
+    system 'make install'
   end
 
   def test
-    system "make test"
+    system 'make test'
   end
 end

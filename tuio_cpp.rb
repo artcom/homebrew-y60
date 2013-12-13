@@ -8,24 +8,24 @@ class TuioCpp < Formula
   depends_on 'sdl'
 
   def install
-    system "make shared"
-    (include+"osc").install Dir["oscpack/osc/*.h"]
-    (include+"ip").install Dir["oscpack/ip/*.h"]
-    (include).install Dir["TUIO/*.h"]
-    lib.install ["libTUIO.dylib"]
+    system 'make shared'
+    (include + 'osc').install Dir['oscpack/osc/*.h']
+    (include + 'ip').install Dir['oscpack/ip/*.h']
+    (include).install Dir['TUIO/*.h']
+    lib.install ['libTUIO.dylib']
   end
 
   def patches
-      # DATA is the embedded diff that comes after __END__ in this file!
-      # Patch adds unistd.h necessary for Mac OSX Mavericks
-      DATA
+    # DATA is the embedded diff that comes after __END__ in this file!
+    # Patch adds unistd.h necessary for Mac OSX Mavericks
+    DATA
   end
 
   def test
     # This test will fail and we won't accept that! It's enough to just replace
     # "false" with the main program this formula installs, but it'd be nice if you
     # were more thorough. Run the test with `brew test TUIO_CPP`.
-    system "false"
+    system 'false'
   end
 end
 
