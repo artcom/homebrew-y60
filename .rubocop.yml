@@ -1,0 +1,20 @@
+Encoding:
+  Enabled: false
+
+Documentation:
+  Enabled: false
+
+MethodLength:
+  Enabled: false
+
+LineLength:
+  Enabled: false
+
+CyclomaticComplexity:
+  Enabled: false
+
+IfUnlessModifier:
+  Enabled: false
+
+HashSyntax:
+  Enabled: false
