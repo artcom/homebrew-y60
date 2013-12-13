@@ -2,7 +2,7 @@ require 'formula'
 
 class Acmake < Formula
   homepage 'https://github.com/artcom/acmake'
-  version '1.0.8'
+  version '1.0.9'
   git_url = if build.include? "use-internal-git"
               "git://gitorious.intern.artcom.de/pro/acmake.git"
             else
@@ -10,7 +10,7 @@ class Acmake < Formula
             end
 
 
-  url git_url, :using => :git, :tag => '1.0.8'
+  url git_url, :using => :git, :tag => '1.0.9'
   head git_url, :using => :git, :branch => 'master'
 
 
