@@ -10,6 +10,7 @@ Current Versions
 - asl (1.0.9)
 - acmake (1.0.9)
 - y60 (1.0.9)
+- watchdog (1.0.9)
 - tuio_cpp (1.4)
 - cclib (head of master branch)
 
