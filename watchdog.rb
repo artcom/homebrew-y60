@@ -2,15 +2,15 @@ require 'formula'
 
 class Watchdog < Formula
   homepage 'https://github.com/artcom/watchdog'
-  version '1.0.9'
+
   git_url = if build.include? "use-internal-git"
               "git://gitorious.intern.artcom.de/pro/watchdog.git"
             else
               'https://github.com/artcom/watchdog.git'
             end
 
-  url git_url, :using => :git, :tag => '1.0.9'
-  head git_url, :using => :git, :branch => 'master'
+  url git_url, :tag => '1.0.9'
+  head git_url, :branch => 'master'
 
   depends_on 'cmake' => :build
   depends_on 'acmake' => :build

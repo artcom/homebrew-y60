@@ -2,7 +2,6 @@ require 'formula'
 
 class Y60 < Formula
   homepage 'http://y60.artcom.de'
-  version "1.0.9"
 
   option 'with-gtk', "Enable building g60 and y60jsgtk component"
   option 'with-cryptopp', "Enable building cryptopp component"
@@ -17,8 +16,8 @@ class Y60 < Formula
             else
               'https://github.com/artcom/y60.git'
             end
-  url git_url, :using => :git, :tag => '1.0.9'
-  head git_url, :using => :git, :branch => 'master'
+  url git_url, :tag => '1.0.9'
+  head git_url, :branch => 'master'
 
   depends_on 'cmake' => :build
   depends_on 'acmake' => :build

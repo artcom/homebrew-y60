@@ -4,7 +4,7 @@ class TuioCpp < Formula
   homepage 'http://reactivision.sourceforge.net/'
   url 'http://downloads.sourceforge.net/project/reactivision/TUIO%201.0/TUIO-Clients%201.4/TUIO_CPP-1.4.zip'
   sha1 'ba62b789b212031b2580c95b8db8392ee7a0e269'
-  
+
   depends_on 'sdl'
 
   def install

@@ -2,7 +2,6 @@ require 'formula'
 
 class Asl < Formula
   homepage 'https://github.com/artcom/asl'
-  version '1.0.9'
 
   option 'use-internal-git', 'Use ART+COM internal repository'
   option 'enable-tests', 'build and execute unit tests'
@@ -15,8 +14,8 @@ class Asl < Formula
             end
 
 
-  url git_url, :using => :git, :tag => '1.0.9'
-  head git_url, :using => :git, :branch => 'master'
+  url git_url, :tag => '1.0.9'
+  head git_url, :branch => 'master'
 
   depends_on 'acmake' => :build
   depends_on 'pkg-config' => :build
