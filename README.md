@@ -41,3 +41,15 @@ $ bundle exec guard
 </pre>
 
 (requires a ruby + bundler setup of course. rvm is recommended)
+
+### Ruby version and Gemset name recommendation
+
+For convenient rvm environment setup a recommendation for ruby version and gemset name are supplied and can be activated via
+
+<pre>
+$ ln -s .ruby-version.dev .ruby-version
+$ ln -s .ruby-gemset.dev .ruby-gemset
+$ cd .
+</pre>
+
+Feel free to ignore this step though and do things another way you prefer.
