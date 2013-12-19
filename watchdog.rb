@@ -15,6 +15,7 @@ class Watchdog < Formula
   depends_on 'cmake' => :build
   depends_on 'acmake' => :build
   depends_on 'asl' => :build
+  depends_on 'glib' => :build
 
   def install
     system 'cmake', '.', *std_cmake_args
