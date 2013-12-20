@@ -66,6 +66,13 @@ class Y60 < Formula
     system 'make'
     system 'make test' if build.include? 'enable-tests'
     system 'make install'
+
+    # workaround for #https://github.com/artcom/homebrew-y60/issues/3
+    acmake_dir = include + "acmake"
+    acmake_dir.children.each do |file|
+      file.delete
+    end
+    acmake_dir.rmdir_if_possible
   end
 
   def test
