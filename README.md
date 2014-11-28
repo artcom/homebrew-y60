@@ -30,3 +30,9 @@ Docs
 `brew help`, `man brew`, or the Homebrew [wiki][].
 
 [wiki]:http://wiki.github.com/mxcl/homebrew
+
+
+Troubleshooting
+_______________
+
+- if, for some reason, version 1.0.8 has to be installed [x] on Mavericks please checkout branch '108_mavericks'
