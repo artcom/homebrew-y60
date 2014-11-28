@@ -30,6 +30,10 @@ brew install https://raw.github.com/artcom/homebrew-y60/master/<formula>.rb
 
 [wiki]:http://wiki.github.com/mxcl/homebrew
 
+## Troubleshooting
+
+- if, for some reason, version 1.0.8 has to be installed [x] on Mavericks please checkout branch '108_mavericks'
+
 
 ## Development
 
