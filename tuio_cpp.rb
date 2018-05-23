@@ -3,7 +3,7 @@ require 'formula'
 class TuioCpp < Formula
   homepage 'http://reactivision.sourceforge.net/'
   url 'http://downloads.sourceforge.net/project/reactivision/TUIO%201.0/TUIO-Clients%201.4/TUIO_CPP-1.4.zip'
-  sha1 'ba62b789b212031b2580c95b8db8392ee7a0e269'
+  sha256 '9fa79a6e7ef7893295c669befbc8f19f13c3e40ee2b98bb75075579cab65edd2'
 
   depends_on 'sdl'
 
